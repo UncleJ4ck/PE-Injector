@@ -11,3 +11,4 @@
 - 8) CreateRemoteThread And Point It To The Function
 ## How PE Injection Works?
 ![PEinjection](https://user-images.githubusercontent.com/107004485/184161972-3116df4b-2a48-4cc4-ae4c-c63c73599531.gif)
+### Big Thanks To Uncle Jack, He Helped Me A Lot In Code Management And Some Stuff
