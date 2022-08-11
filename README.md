@@ -11,4 +11,7 @@
 8) We Should CreateRemoteThread And Point It To The Function
 ## How PE Injection Works?
 ![PEinjection](https://user-images.githubusercontent.com/107004485/184161972-3116df4b-2a48-4cc4-ae4c-c63c73599531.gif)
+## Result Of Injection Of Notepad Process Using PE Injection
+![image](https://user-images.githubusercontent.com/107004485/184226015-2489b041-568e-4f37-bff7-4a873e769a49.png)
+
 ## Big Thanks To [Uncle Jack](https://github.com/UncleJ4ck), He Helped Me A Lot In Code Management And Some Stuff
