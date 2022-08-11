@@ -10,11 +10,10 @@
 class PortableExecutable {
 private:
     PROCESSENTRY32 pinfo;
-    HANDLE ProcessesShot = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0); // Taking the snapshot from your process 
-public:
+    HANDLE ProcessesShot = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0); // Taking a snapshot to save all your processes
     DWORD GetPid(LPCTSTR ProcessName) {
         pinfo.dwSize = sizeof(PROCESSENTRY32);
-        if (Process32First(ProcessesShot, &pinfo)) { // must call this first
+        if (Process32First(ProcessesShot, &pinfo)) { 
             do {
                 if (!lstrcmpi(pinfo.szExeFile, ProcessName)) {
                     CloseHandle(ProcessesShot);
@@ -22,14 +21,14 @@ public:
                 }
             } while (Process32Next(ProcessesShot, &pinfo));
         }
-        CloseHandle(ProcessesShot); // close handle on failure
+        CloseHandle(ProcessesShot); 
         return 0;
     }
 };
 
 DWORD Inject() {
     char ModuleFileName[128];
-    GetModuleFileNameA(0, ModuleFileName, sizeof(ModuleFileName)); // if it didn't work replace it with sizeof(ModuleFileName)
+    GetModuleFileNameA(0, ModuleFileName, sizeof(ModuleFileName)); 
     MessageBoxA(0, ModuleFileName, "INJECTED XD", 0);
     return 0;
 }
