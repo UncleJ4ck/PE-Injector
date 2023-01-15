@@ -14,4 +14,4 @@
 ## Result Of Injection Of Notepad Process Using PE Injection
 ![image](https://user-images.githubusercontent.com/107004485/184226015-2489b041-568e-4f37-bff7-4a873e769a49.png)
 
-> Big Thanks To [Uncle Jack](https://github.com/UncleJ4ck)
+> sharout to my boy: [Z0rcher](https://github.com/Omorreg)
